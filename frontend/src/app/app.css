@@ -1,0 +1,10 @@
+nav  {
+  display: flex; 
+  flex-direction: row;
+  gap: 10px; 
+}
+
+button.logout { 
+  display: flex;
+  align-items: center;
+}

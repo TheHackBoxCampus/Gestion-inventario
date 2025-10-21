@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+  <div class="form-col form-login">
+    <h2 class="title" >Registro</h2>
+    <input placeholder="Nombre" formControlName="username" required />
+    <input placeholder="Correo" formControlName="email" required />
+    <input type="password" placeholder="Contraseña" formControlName="password" required />
+    <button class="btn-primary" type="submit">Registrarse</button>
+  </div>
+</form>

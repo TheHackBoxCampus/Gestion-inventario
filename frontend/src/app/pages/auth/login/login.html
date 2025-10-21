@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="formLogin">
+  <div class="form-col form-login">
+    <h2 class="title">Iniciar sesión</h2>
+    <input placeholder="Correo" formControlName="email" required />
+    <input type="password" placeholder="Contraseña" formControlName="password" required />
+    <button class="btn-primary" type="submit">Entrar</button>
+  </div>
+</form>

@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+/* Simple reset + tiny styles for nice dev look */
+body {
+  font-family: Inter, Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7fafc;
+  color: #0f172a;
+  background-image: url("/background.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+}
+
+.app-log-in { 
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.app-shell {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  border: 1px solid #ccc; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e6eef6;
+  text-align: left;
+}
+
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 300ms ease all; 
+}
+
+button.btn-primary:hover { 
+  background: #0b3ee4
+}
+
+.btn-primary {
+  background: #0b6cff;
+  color: white;
+}
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #ddd;
+}
+
+.form-col {
+  padding: 3rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-col label { 
+  text-align: start;
+}
+
+.form-login {
+  background: #fff; 
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  border: 1px solid #ccc; 
+}
+
+.form-col input,
+.form-col textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  width: 100%;
+}
+
+a { 
+  color: #0b6cff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+.title { 
+  font-size: 1.8rem; 
+  color: #0b6cff;
+}

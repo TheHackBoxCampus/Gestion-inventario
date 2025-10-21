@@ -1,0 +1,25 @@
+<h3 class="title">{{ id ? 'Editar' : 'Nuevo' }} producto</h3>
+
+<form (ngSubmit)="save()" [formGroup]="form">
+  <div class="form-col">
+    
+    <label for="name"><b>Nombre</b></label>
+    <input id="name" placeholder="Nombre" formControlName="name" required />
+    
+    <label for="price"><b>Precio</b></label>
+    <input id="price" placeholder="Precio venta" formControlName="price" type="number" />
+    
+    <label for="description"><b>Descripcion</b></label>
+    <textarea id="description" placeholder="Descripción" formControlName="description"></textarea>
+    
+    <label for="stock"><b>Cantidad de productos</b></label>
+    <input id="stock" placeholder="Stock actual" formControlName="stock" type="number" />
+    
+    <div class="actions">
+      <button class="btn-primary" type="submit">{{ id ? 'Actualizar' : 'Crear' }}</button>
+      <button type="button" class="btn-ghost" routerLink="/products" routerLinkActive="active">
+        Cancelar
+      </button>
+    </div>
+  </div>
+</form>

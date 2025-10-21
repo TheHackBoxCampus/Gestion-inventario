@@ -1,0 +1,35 @@
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+  <h3 class="title">Productos</h3>
+  <div>
+        <button class="btn-ghost" [routerLink]="['/products/new']">Nuevo</button>
+        <button class="btn-ghost" (click)="load()">Refrescar</button>
+  </div>
+</div>
+
+<div class="noFound" *ngIf="products.length < 1">
+  <img src="/noFound.png" alt="no-found">
+</div>
+
+
+<table *ngIf="products.length > 0">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Stock</th>
+      <th>Precio</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.name }}</td>
+      <td>{{ p.stock }}</td>
+      <td>{{ p.price || '-' }}</td>
+      <td class="actions">
+        <button (click)="edit(p.id)" class="btn-primary">Editar</button>
+        <button (click)="remove(p.id)" class="btn-danger">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

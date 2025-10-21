@@ -1,0 +1,23 @@
+<div [ngClass]="{ 'app-log-in': !isLogged, 'app-shell': isLogged }">
+  <div class="header">
+    <h2 *ngIf="isLogged">{{ title }}</h2>
+    <nav>
+      <button *ngIf="isLogged" routerLink="/products" routerLinkActive="active">Productos</button>
+      <button *ngIf="isLogged" class="btn-primary" routerLink="/stats/overview" routerLinkActive="active">
+        Estadísticas
+      </button>
+      <button
+        *ngIf="isLogged"
+        class="btn-primary logout"
+        routerLink="/stats"
+        routerLinkActive="active"
+        (click)="logout()"
+      >
+        <img src="logout.svg" alt="logout" />
+      </button>
+      <a *ngIf="!isLogged" routerLink="/auth/login">Entrar</a>
+      <a *ngIf="!isLogged" routerLink="/auth/register">Registro</a>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>
