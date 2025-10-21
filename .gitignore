@@ -1,0 +1,94 @@
+# =========================================
+# 🧠 GLOBAL
+# =========================================
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Entornos
+.env
+.env.local
+.env.*.local
+
+# =========================================
+# 🐍 BACKEND (FastAPI / Python) 
+# =========================================
+# Compilaciones
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# Archivos temporales y cachés
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+.mypy_cache/
+.pyre/
+.dmypy.json
+.prof
+.ipynb_checkpoints
+
+# Bases de datos locales
+*.db
+*.sqlite3
+
+# Archivos generados por herramientas
+*.pot
+*.mo
+
+# =========================================
+# ⚡ FRONTEND (Angular)
+# =========================================
+# Dependencias
+frontend/node_modules/
+frontend/.angular/cache/
+frontend/.angular/
+
+# Builds y distribuciones
+frontend/dist/
+frontend/out/
+frontend/tmp/
+frontend/build/
+frontend/.next/
+frontend/.nuxt/
+frontend/.output/
+
+# Archivos de entorno Angular
+frontend/.env
+frontend/.env.*.loca
+
+# =========================================
+# 🧰 EDITORES Y TOOLS
+# =========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+# =========================================
+# 🧩 MISC
+# =========================================
+# Archivos comprimidos o backups
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+
+# Archivos temporales de sistema operativo
+ehthumbs.db
+Desktop.ini
